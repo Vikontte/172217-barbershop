@@ -4,6 +4,10 @@ body {
     color: #000000;  
     font-weight: bold;
     font-family: Sans Narrow Bold, Arial;
+/*
+    background: url("14.jpg") no-repeat 50% 8px;
+    background-size: 1200px auto;
+*/
 }
 h1 {
     font-size: 30px;
@@ -11,7 +15,198 @@ h1 {
     text-transform: uppercase;
 }
 h2 {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px ; 
     text-transform: uppercase;
+}
+/* ХЕДЕР*/
+.main-header {
+  margin-bottom: 53px;
+    background: black;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+    outline: solid yellow;
+}
+.logo {
+    float: left; 
+    width: 140px;
+    margin-right: 10px;
+ 
+}
+.logo img {
+    margin: auto;
+}
+.main-nav {
+    float: left;
+    width: 620px;
+    margin-left: 10px;
+    min-height: 72px;
+}
+.main-nav li {
+    display: inline;
+}
+.user-block {
+    float: right;
+    width: 140px;
+}
+/*ФУТЕР*/
+.main-footer {
+    margin-top: 35px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    outline: solid yellow;
+}
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+  min-height: 90px;
+}
+
+.footer-social {
+  float: left;
+  width: 180px;
+  min-height: 90px;
+}
+
+.footer-copyright {
+  float: right;
+  width: 180px;
+  min-height: 90px;
+}
+
+/*MAIN*/
+
+/*Каталог*/
+.catalog-header-space {
+    min-height: 90px;
+    margin-bottom: 40px;
+    outline: solid green;
+}
+.catalog-content-left {
+    float: left;
+    width: 210px;
+    min-height: 612px;
+    padding-right: 10px;
+    outline: solid green;
+}
+.brands {
+    margin-top: -17px;
+/*        не могу найти откуда возникает маргин*/
+    margin-bottom: 20px;
+    outline: solid blue;
+    min-height: 286px;
+}
+.product-group {
+    min-height: 170px;
+    outline: solid blue;
+}
+.catalog-content-right {
+    float: right;
+    width: 700px;
+    outline: solid green;
+}
+.product-space {
+    outline: solid blue;
+    font-size: 0px;
+    margin-bottom: 10px;
+}
+article {
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    min-height: 286px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    outline: solid red;
+}
+article:nth-child(3n+3) {
+    margin-right: 0px;
+}
+.page-number {
+    outline: solid blue;
+    min-height: 40px;
+    padding: 15px 0px;
+}
+.page-btn {
+    display: inline-block;
+}
+/*Страница товара*/
+.item-header-space {
+    min-height: 90px;
+    margin-bottom: 40px;
+    outline: solid green;
+}
+.item-content-left {
+    float: left;
+    width: 460px;
+    padding-right: 10px;
+    font-size: 0px;
+    min-height: 680px;
+    outline: solid green;
+}
+.main-item-pic {
+    vertical-align: top;
+    width: 460px;
+    height: 498px;
+    margin-bottom: 20px;
+}
+.item-pic {
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+    height: 149px;
+    margin-right: 20px;
+}
+/*почему значение 4 если по идее должно быть 3?*/
+.item-pic:nth-child(4) {
+    margin-right: 0px;
+}
+
+.item-content-right {
+    float: right;
+    width: 390px;
+    min-height: 680px;
+    padding-left: 10px;
+    outline: solid green;
+}
+/*    ПРАЙС */
+.price-header-space {
+    min-height: 90px;
+    margin-bottom: 30px;
+    outline: solid green;
+}
+.subheader {
+    min-height: 60px;
+    margin-bottom: 40px;
+    outline: solid green;
+}
+.price-content-left {
+    float: left;
+    width: 390px;
+    padding-right: 10px;
+    min-height: 490px;
+    outline: solid green;
+}
+.price-content-right {
+    float: right;
+    width: 460px;
+    padding-left: 10px;
+    min-height: 490px;
+    outline: solid green;
+}
+
+/*для всех*/
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.breadcrumbs li {
+    display: inline;
 }

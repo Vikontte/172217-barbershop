@@ -7,8 +7,8 @@
   </head>
   <body>
       <header class="main-header">
-          <div class="container">
-              <a hrev="#">
+          <div class="container clearfix">
+              <a class="logo" hrev="#">
                     <img src="img/logo.png" width="111px" height="24px" alt="Барбершоп">
               </a>
               <nav class="main-nav">
@@ -37,8 +37,10 @@
       </header>
 
       <main class="container">
-            <h2 class="header">Средства для ухода</h2>
-            <nav class="breadcrumbs">
+          <div class=catalog-header-space>    
+          <h2 class="header">Средства для ухода</h2>
+          <div class="breadcrumbs-container">
+                <nav class="breadcrumbs">
                 <ul>
                     <li>
                         <a class="breadcrumbs-link" href="#">Главная</a>
@@ -51,8 +53,12 @@
                     </li>
                 </ul>
             </nav>
-          <div class="index-content-left">
+          </div>
+          </div>
+          <div class="catalog-content clearfix">
+          <div class="catalog-content-left">
             <form class="select-form" action="https://echo.htmlacademy.ru" method="get">
+            <div class="brands">
             <h2>Производители:</h2>
             <input type="checkbox" name="baxter-of-california" id="baxter-of-california" value="baxter-of-california" checked>
             <label for="baxter-of-california">Baxter of California</label>
@@ -66,7 +72,8 @@
             <label for="Murray's">Murray's</label>  
             <input type="checkbox" name="American-crew" id="American-crew" value="American-crew" checked>
             <label for="American-crew">American crew</label>
-              
+            </div>
+            <div class="product-group">
             <h2>Группы товаров:</h2>
             <input type="radio" name="product-group" id="razor-accessories" value="razor-accessories">
             <label for="razor-accessories">Бритвенные принадлежности</label>
@@ -74,14 +81,14 @@
             <label for="products-for-care">Средства для ухода</label>
             <input type="radio" name="product-group" id="accessories" value="accessories">
             <label for="accessories">Аксессуары</label>
-              
+            </div>
             <a href="#"><button class="btn" type="submit">Показать</button></a>
             </form>
           </div>
-          <div class="index-content-right">
-              
+          <div class="catalog-content-right">
+            <div class="product-space">
               <article>
-                  <a href="#"><img class="product-picture" src="img/set-for-travelling-baxter-of-california.jpg" width="220" height="165" alt="Набор для путешествий Baxter of California"></a>
+                  <a href="catalog-item.html"><img class="product-picture" src="img/set-for-travelling-baxter-of-california.jpg" width="220" height="165" alt="Набор для путешествий Baxter of California"></a>
                   <div class="product-info">
                     <a class="product-item-link" href="catalog-item.html">
                         <span class="product-name">Набор для путешествий</span>
@@ -92,7 +99,7 @@
                 </div>
               </article>
               <article>
-              <img class="product-picture" src="img/conditioner-baxter-of-california.jpg" width="220" height="165" alt="Увлажняющий кондиционер Baxter of California">
+              <a href="#"><img class="product-picture" src="img/conditioner-baxter-of-california.jpg" width="220" height="165" alt="Увлажняющий кондиционер Baxter of California"></a>
                 <div class="product-info">
                     <a class="product-item-link" href="#">
                         <span class="product-name">Увлажняющий кондиционер</span>
@@ -103,7 +110,7 @@
                 </div>
               </article>
               <article>
-              <img class="product-picture" src="img/gel-for-hair-suavecito.jpg" width="220" height="165" alt="Гель для волос SUAVECITO">
+              <a href="#"><img class="product-picture" src="img/gel-for-hair-suavecito.jpg" width="220" height="165" alt="Гель для волос SUAVECITO"></a>
                 <div class="product-info">
                     <a class="product-item-link" href="#">
                         <span class="product-name">Гель для волос</span>
@@ -114,7 +121,7 @@
                 </div>
               </article>
               <article>
-              <img class="product-picture" src="img/gel-for-hair-styling-american-crew.jpg" width="220" height="165" alt="Гель для укладки волос American crew">
+              <a href="#"><img class="product-picture" src="img/gel-for-hair-styling-american-crew.jpg" width="220" height="165" alt="Гель для укладки волос American crew"></a>
                 <div class="product-info">
                     <a class="product-item-link" href="#">
                         <span class="product-name">Гель для укладки волос</span>
@@ -125,7 +132,7 @@
                 </div>
               </article>
               <article>
-              <img class="product-picture" src="img/gel-for-hair-american-crew.jpg" width="220" height="165" alt="Гель для волос American crew">
+              <a href="#"><img class="product-picture" src="img/gel-for-hair-american-crew.jpg" width="220" height="165" alt="Гель для волос American crew"></a>
                 <div class="product-info">
                     <a class="product-item-link" href="#">
                         <span class="product-name">Гель для волос</span>
@@ -136,7 +143,7 @@
                 </div>
               </article>
               <article>
-              <img class="product-picture" src="img/shaving-kit-baxter-of-california.jpg" width="220" height="165" alt="Набор для бритья Baxter of California">
+              <a href="#"><img class="product-picture" src="img/shaving-kit-baxter-of-california.jpg" width="220" height="165" alt="Набор для бритья Baxter of California"></a>
                 <div class="product-info">
                     <a class="product-item-link" href="#">
                         <span class="product-name">Набор для бритья</span>
@@ -146,17 +153,18 @@
                     <a class="buy-btn btn" href="#">Купить</a>
                 </div>
               </article>
-              
-              <div class="page-number">
+            </div>
+            <div class="page-number">
                 <span class="page-btn page-active">1</span>
                 <a class="page-btn" href="#">2</a> 
                 <a class="page-btn" href="#">3</a> 
                 <a class="page-btn" href="#">4</a> 
-              </div>
+            </div>
+          </div>
           </div>
       </main>
       <footer class="main-footer">
-        <div class="container">
+        <div class="container clearfix">
             <div class="footer-contacts">
                 <span>Барбершоп «Бородинский»</span>
                 <span>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</span>
