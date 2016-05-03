@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
       <header class="main-header">
           <div class="container clearfix">
-              <a class="logo" hrev="#">
+              <a class="logo" href="#">
                     <img src="img/logo.png" width="111px" height="24px" alt="Барбершоп">
               </a>
               <nav class="main-nav">
@@ -23,7 +25,8 @@
                         <a class="main-nav-link" href="price.html">Прайс-лист</a>
                         </li>
                         <li>
-                        <a class="main-nav-link active" href="#">Магазин</a>
+                        <span class="main-nav-link active" href="#">Магазин    
+                        </span>
                         </li>
                         <li>
                         <a class="main-nav-link" href="#">Контакты</a>
@@ -48,8 +51,8 @@
                     <li>
                         <a class="breadcrumbs-link" href="#">Магазин</a>
                     </li>
-                    <li>
-                        <span class="breadcrumbs-link active">Средства для ухода</span>
+                    <li class="active">
+                        <span class="breadcrumbs-link">Средства для ухода</span>
                     </li>
                 </ul>
             </nav>
@@ -59,7 +62,7 @@
           <div class="catalog-content-left">
             <form class="select-form" action="https://echo.htmlacademy.ru" method="get">
             <div class="brands">
-            <h2>Производители:</h2>
+            <h2 class="form-header">Производители:</h2>
             <input type="checkbox" name="baxter-of-california" id="baxter-of-california" value="baxter-of-california" checked>
             <label for="baxter-of-california">Baxter of California</label>
             <input type="checkbox" name="mr-natty" id="mr-natty" value="mr-natty">
@@ -74,7 +77,7 @@
             <label for="American-crew">American crew</label>
             </div>
             <div class="product-group">
-            <h2>Группы товаров:</h2>
+            <h2 class="form-header">Группы товаров:</h2>
             <input type="radio" name="product-group" id="razor-accessories" value="razor-accessories">
             <label for="razor-accessories">Бритвенные принадлежности</label>
             <input type="radio" name="product-group" id="products-for-care" value="products-for-care" checked>
@@ -92,21 +95,25 @@
                   <div class="product-info">
                     <a class="product-item-link" href="catalog-item.html">
                         <span class="product-name">Набор для путешествий</span>
-                        <span class="product-brand">"Baxter of California"</span>
+                        <span class="product-brand">&laquo;Baxter of California&raquo;</span>
                     </a>
+                    <div class="btn-block">
                     <div class="product-price">2 900 руб.</div>
                     <a class="buy-btn btn" href="#">Купить</a>
-                </div>
+                    </div>
+                    </div>
               </article>
               <article>
               <a href="#"><img class="product-picture" src="img/conditioner-baxter-of-california.jpg" width="220" height="165" alt="Увлажняющий кондиционер Baxter of California"></a>
                 <div class="product-info">
                     <a class="product-item-link" href="#">
                         <span class="product-name">Увлажняющий кондиционер</span>
-                        <span class="product-brand">"Baxter of California"</span>
+                        <span class="product-brand">&laquo;Baxter of California&raquo;</span>
                     </a>
+                    <div class="btn-block">
                     <div class="product-price">750 руб.</div>
                     <a class="buy-btn btn" href="#">Купить</a>
+                </div>
                 </div>
               </article>
               <article>
@@ -114,10 +121,12 @@
                 <div class="product-info">
                     <a class="product-item-link" href="#">
                         <span class="product-name">Гель для волос</span>
-                        <span class="product-brand">"SUAVECITO"</span>
+                        <span class="product-brand">&laquo;SUAVECITO&raquo;</span>
                     </a>
+                    <div class="btn-block">
                     <div class="product-price">290 руб.</div>
                     <a class="buy-btn btn" href="#">Купить</a>
+                </div>
                 </div>
               </article>
               <article>
@@ -125,10 +134,12 @@
                 <div class="product-info">
                     <a class="product-item-link" href="#">
                         <span class="product-name">Гель для укладки волос</span>
-                        <span class="product-brand">"American crew"</span>
+                        <span class="product-brand">&laquo;American crew&raquo;;</span>
                     </a>
+                    <div class="btn-block">
                     <div class="product-price">500 руб.</div>
                     <a class="buy-btn btn" href="#">Купить</a>
+                </div>
                 </div>
               </article>
               <article>
@@ -136,10 +147,12 @@
                 <div class="product-info">
                     <a class="product-item-link" href="#">
                         <span class="product-name">Гель для волос</span>
-                        <span class="product-brand">"American crew"</span>
+                        <span class="product-brand">&laquo;American crew&raquo;</span>
                     </a>
+                    <div class="btn-block">
                     <div class="product-price">300 руб.</div>
                     <a class="buy-btn btn" href="#">Купить</a>
+                </div>
                 </div>
               </article>
               <article>
@@ -147,18 +160,20 @@
                 <div class="product-info">
                     <a class="product-item-link" href="#">
                         <span class="product-name">Набор для бритья</span>
-                        <span class="product-brand">"Baxter of California"</span>
+                        <span class="product-brand">&laquo;Baxter of California&raquo;</span>
                     </a>
+                    <div class="btn-block">
                     <div class="product-price">3 900 руб.</div>
                     <a class="buy-btn btn" href="#">Купить</a>
+                    </div>
                 </div>
               </article>
             </div>
             <div class="page-number">
                 <span class="page-btn page-active">1</span>
-                <a class="page-btn" href="#">2</a> 
-                <a class="page-btn" href="#">3</a> 
-                <a class="page-btn" href="#">4</a> 
+                <a class="page-btn current" href="#">2</a> 
+                <a class="page-btn page-active" href="#">3</a> 
+                <a class="page-btn page-active" href="#">4</a> 
             </div>
           </div>
           </div>
@@ -167,7 +182,7 @@
         <div class="container clearfix">
             <div class="footer-contacts">
                 <span>Барбершоп «Бородинский»</span>
-                <span>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</span>
+                <span>Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
                 <a href="#">Как нас найти?</a><br>
                 <div>Телефон: +7 (812) 666-02-66</div>
             </div>
@@ -179,7 +194,7 @@
             </div>
             <div class="footer-copyright">
                 <span>Разработано:</span>
-                <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+                <a class="btn" href="https://htmlacademy.ru">HTML Academy.RU</a>
             </div>
       </div>
     </footer>

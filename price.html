@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="price">
       <header class="main-header">
           <div class="container clearfix">
               <a class="logo" hrev="#">
@@ -20,10 +21,10 @@
                         <a class="main-nav-link" href="#">Новости</a>
                         </li>
                         <li>
-                        <a class="main-nav-link active" href="#">Прайс-лист</a>
+                        <span class="main-nav-link active">Прайс-лист</span>
                         </li>
                         <li>
-                        <a class="main-nav-link" href="#">Магазин</a>
+                        <a class="main-nav-link" href="catalog.html">Магазин</a>
                         </li>
                         <li>
                         <a class="main-nav-link" href="#">Контакты</a>
@@ -37,37 +38,34 @@
       </header>
 
       <main class="container">
-            <div class="price-header-space">
             <h1>Прайс-лист</h1>
             <nav class="breadcrumbs">
                 <ul>
                     <li>
                         <a class="breadcrumbs-link" href="#">Главная</a>
                     </li>
-                    <li>
-                        <span class="breadcrumbs-link active">Прайс-лист</span>
+                    <li class="active">
+                        <span class="breadcrumbs-link">Прайс&mdash;лист</span>
                     </li>
                 </ul>
             </nav>
-            </div>
-            <div class="subheader">
+            <div class="inner-content">
+            <div class="price-subheader">
 			<h2>Истинно мужская классика</h2>
             </div>
             <div class="price-content clearfix">
 			<div class="price-content-left">
-			<h2>Мы используем только лучшие средства:</h2>
-			<ul>
+			<h2>Мы используем только<br>лучшие средства:</h2>
+			<ul class="custom-list">
 				<li>baxter of california</li>
 				<li>mr natty</li>
 				<li>suavecito</li>
 				<li>malin+goetz</li>
 			</ul>
-			<h2>Несколько слов о нас:</h2>
-			<p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работает на количество, мы делаем качество.</p>
-			</div>
-			<div class="price-content-right">
-			     <h2>Цены на услуги наших мастеров:</h2>
-			     <table>
+            </div>
+            <div class="price-content-right">
+			     <h2>Цены на услуги<br> наших мастеров:</h2>
+			     <table class="prices-table">
 				    <tr>
 					   <td>Стрижка</td>
 					   <td>1500 р.</td>
@@ -81,8 +79,17 @@
 					   <td>350 р.</td>
 				    </tr>
 			     </table>
+            </div> 
+            </div>
+            <div class="price-content clearfix">
+                <h2>Несколько слов о нас:</h2>
+                <div class="price-content-left">  
+                    <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работает на количество, мы делаем качество.</p>
+                </div>
+                 <div class="price-content-right">
 			     <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
 			</div>
+          </div>
           </div>
       </main>
 	  
@@ -90,7 +97,7 @@
         <div class="container clearfix">
             <div class="footer-contacts">
                 <span>Барбершоп «Бородинский»</span>
-                <span>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</span>
+                <span>Адрес: г. Санкт-Петербург, ул.Б. Конюшенная, д. 19/8</span>
                 <a href="#">Как нас найти?</a><br>
                 <div>Телефон: +7 (812) 666-02-66</div>
             </div>
